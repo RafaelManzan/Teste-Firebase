@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
+      
+        // Coloca a configuração do seu projeto a partir daqui
+        const firebaseConfig = {
+          apiKey: "AIzaSyAbdIiUMW8uMkwR2BNXOw4VvD4mW0Z7sao",
+          authDomain: "bola-teste.firebaseapp.com",
+          databaseURL: "https://bola-teste-default-rtdb.firebaseio.com",
+          projectId: "bola-teste",
+          storageBucket: "bola-teste.appspot.com",
+          messagingSenderId: "364720798726",
+          appId: "1:364720798726:web:c56d44123e137d18e61787"
+        };
+        // A configuração do projeto termina aqui
+      
+        firebase.initializeApp(firebaseConfig);
+      </script>
+  </body>
+</html>
